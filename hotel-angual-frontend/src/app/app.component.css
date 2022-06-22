@@ -1,0 +1,63 @@
+
+a {
+    text-decoration: none;
+}
+
+.mainMenu li {
+    list-style: none;
+    color: white;
+}
+
+.mainMenu a {
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+
+.mainMenu a:hover {
+    transform: scale(1.1);
+    color: #4CAF50;
+}
+.mainMenu {
+    -webkit-box-shadow: inset 3px -6px 3px -5px #4CAF50;
+    -moz-box-shadow: inset 3px -6px 3px -5px #4CAF50;
+    box-shadow: inset 3px -6px 3px -3px#4CAF50;
+    direction: ltr;
+    height: 65px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    background: #222222;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 9999999;
+}
+.buttons {
+    display: flex;
+    margin-right: 5%;
+}
+
+.button {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 9px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mainMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        display: none;
+    }
+}

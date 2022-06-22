@@ -1,0 +1,65 @@
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+    line-height: 0;
+}
+.img1{
+    background-image: url("room1abut.jpg");
+}
+.img2{
+    background-image: url("div4.jpg");
+}
+.img3{
+    background-image: url("forsale.jpg");
+}
+.img1,.img2,.img3{
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 600px) {
+    .box>img {
+        width: 100%;
+    }
+    .box>span {
+        font-size: 3.8vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+    }
+    .box:hover>span{
+        font-size: xx-large;
+        color: #3b773e;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .div3 {
+        display: flex;
+    }
+    .box>img {
+        /*height: calc(100% - 25vh);*/
+        height: 500px;
+        width: -webkit-fill-available;
+        object-fit: cover;
+        transition: .5s;
+    }
+    .box>span {
+        font-size: x-large;
+        color: #222222;
+        display: block;
+        text-align: center;
+        height: 15vh;
+        line-height: 2.6;
+    }
+
+    .box:hover>span{
+        font-size: xx-large;
+        color: #3b773e;
+    }
+    
+}

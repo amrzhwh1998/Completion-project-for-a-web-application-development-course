@@ -1,0 +1,113 @@
+.indent-small {
+    margin-left: 5px;
+}
+
+.form-group.internal {
+    margin-bottom: 0;
+}
+
+.dialog-panel {
+    margin: 10px;
+}
+
+.datepicker-dropdown {
+    z-index: 200 !important;
+}
+
+.panel-body {
+    background: #e5e5e5;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #e5e5e5 0%, #ffffff 100%);
+    /* FF3.6+ */
+  
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #e5e5e5 0%, #ffffff 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #e5e5e5 0%, #ffffff 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #e5e5e5 0%, #ffffff 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, #e5e5e5 0%, #ffffff 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#ffffff', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    font: 600 15px "Open Sans", Arial, sans-serif;
+    /*for Hebrew page*/
+    direction: rtl;
+    padding-right:5%;
+}
+
+label.control-label {
+    font-weight: 600;
+    color: #777;
+}
+
+.head{
+    background: #3b773e;
+    height: 35px;
+    margin-left: -2%;
+    width: 104%;
+    border-radius: 6px;
+    padding-top: 4px;
+    padding-right: 5px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.allInputs{
+    width: 50%;
+}
+
+.timeInputs{
+    width: min-content;
+}
+
+.rentingButton {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #3b773e;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 20px;
+  }
+  
+  .rentingButton:hover {background-color: #3e8e41}
+  
+  .rentingButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .guestAgeInputs{
+    max-width: 200px;
+   }
+
+@media only screen and (min-width: 600px) {
+    .allInputs{
+        width: 80%;
+    }
+    .guests{
+        display: flex;
+    }
+    .timeGrup{
+        display: flex;
+    }
+    .timeOutInput{
+       margin-right: 40px;
+    }
+    .guestAgeInputs{
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .allInputs{
+        width: 80%;
+    }
+}

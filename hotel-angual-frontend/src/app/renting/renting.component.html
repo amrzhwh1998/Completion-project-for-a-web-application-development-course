@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="panel panel-primary dialog-panel">
+        <div class="panel-heading">
+            <h5 class="head">להשכרת חדרים</h5>
+        </div>
+    </div>
+
+    <div class="panel-body myBody">
+        <form class="form" role="form" [formGroup]="roomForm" (ngSubmit)="submitRoom()">
+
+            <div class="form-group">
+                <label class="control-label" for="id_title">
+                    <h2>שם</h2>
+                </label>
+                <input class="form-control allInputs" id="id_first_name" formControlName="firstName" placeholder="שם"
+                    type="text">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="id_title">
+                    <h2>
+                        מספר חדר <h2 style="color: red; display: inline;">*</h2>
+                    </h2>
+                </label>
+                <input class="form-control allInputs" formControlName="roomid" placeholder="בין 781 ל 790 *"
+                    type="number" min="781" max="790">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="id_title">
+                    <h2>אורחים</h2>
+                </label>
+                <div class='guests'>
+                    <input class="form-control guestAgeInputs" formControlName="overAge18" id="id_adults"
+                        placeholder="18+ שנים" type="number" min="0" max="5">
+                    <input class="form-control guestAgeInputs" formControlName="age2To17" id="id_children"
+                        placeholder="2-17 שנים" type="number" min="0" max="5">
+                    <input class="form-control guestAgeInputs" formControlName="overAge2" id="id_children_free"
+                        placeholder="&lt; 2 שנים" type="number" min="0" max="5">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class='control-label' for='id_title'>
+                    <h2>
+                        מספר טלפון <h2 style="color: red; display: inline;">*</h2>
+                    </h2>
+                </label>
+                <input class='form-control allInputs' formControlName="phoneNumer" placeholder='מספר טלפון *'
+                    maxlength="10" type="tel">
+            </div>
+
+            <div class="form-group timeGrup">
+                <label class="control-label" for="id_title">
+                    <h4>זמן כניסה</h4>
+                </label>
+                <input class="form-control timeInputs" formControlName="receptionTime" type="date">
+                <label class="control-label timeOutInput" for="id_title">
+                    <h4>זמן יציאה</h4>
+                </label>
+                <input class="form-control timeInputs" formControlName="departureTime" type="date">
+            </div>
+            <br>
+            <button class="rentingButton" type="submit">השכר</button>
+            <br>
+        </form>
+    </div>
+</div>

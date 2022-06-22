@@ -1,0 +1,15 @@
+<h1 class="headNav">תחפש חדר לפי מספר מיטות</h1>
+<div class="form-group">
+    <input type="text" class="form-control searchInput" placeholder="...מספר מיטות בחדר" [(ngModel)]="filterTerm">
+</div>
+<div class="card" *ngFor=" let room of rooms | filter:filterTerm">
+    <img class="card-img-top" [src]="room.img" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">חדר מספר: <h5 style="color:#49a64d; display: inline;">{{room.id}}</h5>
+        </h5>
+        <h5 class="card-title">מספר מיטות: <h2 style="color:#49a64d; display: inline;">{{room.numberOfBeds}}</h2>
+        </h5>
+        <p class="card-text">{{room.desc}}</p>
+        <a href="#" routerLink="/renting" class="btn btn-success" style="background: #96cb99;">להשכיר</a>
+    </div>
+</div>

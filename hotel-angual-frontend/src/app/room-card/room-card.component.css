@@ -1,0 +1,37 @@
+.headNav{
+    TEXT-ALIGN: END; 
+    background: #96cb99; 
+    box-shadow: 0 0 0 0.2rem rgb(73 166 77);
+    margin-bottom: 10px;
+}
+.searchInput{
+    text-align: end;
+    border-color:#96cb99; 
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(73 166 77);
+}
+
+@media only screen and (max-width: 600px) {
+    .card{
+    width: 360px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .card{
+       display: inline-table;
+       margin: 2%;
+       width: 620px;
+    }
+}
+.roomimgs{
+    background-image: url("room2.jpg");
+    background-image: url("room3.jpg");
+    background-image: url("room4.jpg");
+    background-image: url("room5.jpg");
+    background-image: url("room6.jpg");
+    background-image: url("room7.jpg");
+    background-image: url("room8.jpg");
+    background-image: url("room9.jpg");
+    background-image: url("room10.jpg");
+    background-image: url("room11.jpg");
+}

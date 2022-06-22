@@ -1,0 +1,44 @@
+
+.contactUs {
+    margin-top: 30px;
+    padding-top: 100px;
+    height: 800px;
+    width: 100%;
+}
+.lineOrange {
+    margin-top: 15px;
+    height: 5px;
+    width: 60px;
+    background: #4CAF50;
+    margin: auto;
+}
+.contactUsTite {
+    margin-top: -1px;
+    color: #222222;
+    font: 400 40px "Oswald", sans-serif;
+    margin-bottom: 25px;
+}
+
+.lineOrange2 {
+    height: 8px;
+    width: 80px;
+    background: #4CAF50;
+}
+
+.contactUsInput {
+    padding-right: 5px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: #f1f1f1;
+    border-style: hidden;
+    min-width: 540px;
+}
+
+.comment {
+    padding-right: 5px;
+    height: 140px;
+    margin-bottom: 10px;
+    background: #f1f1f1;
+    border-style: hidden;
+    padding-bottom: 90px;
+}
